@@ -4,7 +4,7 @@
              x:Class="XamarinClientApp.KategoriPage">
 
   <StackLayout>
-    <ListView ItemsSource="{Binding ListKategori}">
+    <ListView x:Name="listKategori" ItemsSource="{Binding ListKategori}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell Text="{Binding KategoriId}" 
