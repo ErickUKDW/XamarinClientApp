@@ -33,7 +33,7 @@ namespace XamarinClientApp
                 var _response = await _client.Execute(_request);
                 if(_response.StatusCode==System.Net.HttpStatusCode.OK)
                 {
-
+                    await Navigation.PushAsync(new KategoriPage());
                 }
             }
             catch (Exception ex)
