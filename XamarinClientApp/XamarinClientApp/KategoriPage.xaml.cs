@@ -15,9 +15,13 @@ namespace XamarinClientApp
         public KategoriPage()
         {
             InitializeComponent();
-            this.BindingContext = new KategoriViewModel();
 
             listKategori.ItemTapped += ListKategori_ItemTapped;
+        }
+
+        protected override void OnAppearing()
+        {
+            this.BindingContext = new KategoriViewModel();
         }
 
         private void ListKategori_ItemTapped(object sender, ItemTappedEventArgs e)

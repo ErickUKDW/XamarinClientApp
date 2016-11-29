@@ -4,7 +4,7 @@
              x:Class="XamarinClientApp.EditKategoriPage">
   <StackLayout>
     <Label Text="ID" />
-    <Entry x:Name="txtIdKategori" Text="{Binding KategoriId}" />
+    <Entry x:Name="txtIdKategori" IsEnabled="False" Text="{Binding KategoriId}" />
     <Label Text="Nama Kategori" />
     <Entry x:Name="txtNamaKategori" Text="{Binding NamaKategori}" />
     <StackLayout Orientation="Horizontal">
